@@ -9,18 +9,17 @@ import SwiftUI
 
 struct CharacterListView: View {
     @StateObject private var characterViewModel = CharacterViewModel()
-
+    
     var body: some View {
         NavigationView {
             List(characterViewModel.characters) { character in
                 VStack(alignment: .leading) {
-                    Image(character.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200)
+                    AsyncImage(url: URL(string: character.image))
                     Text(character.name)
                         .font(.title)
                     Text(character.species)
+                        .foregroundColor(.secondary)
+                    Text(character.status)
                         .foregroundColor(.secondary)
                     // Add more views to display other character properties
                 }

@@ -47,3 +47,5 @@ class CharacterViewModel: ObservableObject {
 struct APIResponse<T: Codable>: Codable {
     let results: [T]
 }
+
+
