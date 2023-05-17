@@ -31,7 +31,7 @@ struct CharacterListView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Characters")
+            .navigationTitle("Rick and Morty")
         }
     }
 }
