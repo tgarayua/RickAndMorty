@@ -17,10 +17,16 @@ struct CharacterListView: View {
                     AsyncImage(url: URL(string: character.image))
                     Text(character.name)
                         .font(.title)
-                    Text(character.species)
-                        .foregroundColor(.secondary)
-                    Text(character.status)
-                        .foregroundColor(.secondary)
+                    if (character.status == "Alive") {
+                        (Text(Image(systemName: "circle.fill")).foregroundColor(.green) + Text(character.status) + Text(" - ") + Text(character.species))
+                    } else if (character.status == "Dead") {
+                        (Text(Image(systemName: "circle.fill")).foregroundColor(.red) + Text(character.status) + Text(" - ") + Text(character.species))
+                    } else {
+                        (Text(Image(systemName: "circle.fill")).foregroundColor(.gray) + Text(character.status) + Text(" - ") + Text(character.species))
+                    }
+                    Text("Last Known Location: ").foregroundColor(.secondary)
+                    Text(character.location.name)
+                    Text("First Seen In: ").foregroundColor(.secondary)
                     // Add more views to display other character properties
                 }
                 .padding()
