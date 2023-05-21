@@ -27,6 +27,7 @@ struct CharacterListView: View {
                     Text("Last Known Location: ").foregroundColor(.secondary)
                     Text(character.location.name)
                     Text("First Seen In: ").foregroundColor(.secondary)
+                    Text(character.episode.first ?? "")
                     // Add more views to display other character properties
                 }
                 .padding()
