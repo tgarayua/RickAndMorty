@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1382F4CB2A28F09100FC605C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1382F4CA2A28F09100FC605C /* DetailView.swift */; };
 		13BEE4822A100305004BD3D6 /* RickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BEE4812A100305004BD3D6 /* RickAndMortyApp.swift */; };
 		13BEE4842A100305004BD3D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BEE4832A100305004BD3D6 /* ContentView.swift */; };
 		13BEE4862A100306004BD3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BEE4852A100306004BD3D6 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1382F4CA2A28F09100FC605C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		13BEE47E2A100305004BD3D6 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BEE4812A100305004BD3D6 /* RickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyApp.swift; sourceTree = "<group>"; };
 		13BEE4832A100305004BD3D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				13BEE4BB2A13EF3E004BD3D6 /* CharacterListView.swift */,
+				1382F4CA2A28F09100FC605C /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13BEE4AF2A10061A004BD3D6 /* CharacterModel.swift in Sources */,
+				1382F4CB2A28F09100FC605C /* DetailView.swift in Sources */,
 				13BEE4842A100305004BD3D6 /* ContentView.swift in Sources */,
 				13BEE4BC2A13EF3E004BD3D6 /* CharacterListView.swift in Sources */,
 				13BEE4822A100305004BD3D6 /* RickAndMortyApp.swift in Sources */,

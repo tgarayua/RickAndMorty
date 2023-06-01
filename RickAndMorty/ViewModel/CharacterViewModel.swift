@@ -13,7 +13,6 @@ class CharacterViewModel: ObservableObject {
 
     init() {
         fetchCharacters()
-        fetchfirstEpisode(url: "https://rickandmortyapi.com/api/episode/1")
     }
 
     func fetchCharacters() {
